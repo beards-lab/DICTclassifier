@@ -108,12 +108,8 @@ If you use this code, please cite:
 ```
 Schenk, N.A., Sturgess, A., Mahoney, C., & Beard, D.A. (2026). Predicting Metabolism-Mediated 
 Mechanisms of Drug-Induced Cardiotoxicity Using Genome-Scale Metabolic Flux Analysis. 
-University of Michigan, Department of Molecular & Integrative Physiology.
+University of Michigan, Department of Molecular & Integrative Physiology. (Unpublished work)
 ```
-
-## License
-
-[Choose your license — MIT, GPL, BSD, etc.]
 
 ## Contact
 
