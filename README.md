@@ -101,12 +101,9 @@ step12_dose_response_heatmaps
 │   ├── meddra_annotate.csv
 │   ├── GEGcsv/
 │   └── aersMineExploreDataSet_176_all54.tsv.xlsx
-├── models/
+└── models/
 │   ├── HeartModel.mat
 │   └── objRxns.mat
-├── out/                    % Generated intermediate results
-├── outPf_GL/               % Generated dose-response grid results
-└── figures/                % Generated figures
 ```
 
 ## Citation
