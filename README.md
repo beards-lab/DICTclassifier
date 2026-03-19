@@ -1,6 +1,6 @@
 # Predicting Metabolism-Mediated Drug-Induced Cardiotoxicity Using Genome-Scale Metabolic Flux Analysis
 
-This repository contains the MATLAB code for reproducing all computational results and figures in the unpublished work:
+This repository contains the MATLAB code for reproducing all computational results and figures in:
 
 > Schenk, N.A., Sturgess, A., Mahoney, C., & Beard, D.A. "Predicting Metabolism-Mediated Mechanisms of Drug-Induced Cardiotoxicity Using Genome-Scale Metabolic Flux Analysis." *University of Michigan, Department of Molecular & Integrative Physiology.*
 
@@ -30,12 +30,13 @@ Place the following in the project directory before running:
 | Directory/File | Description |
 |---|---|
 | `data/drugMap.xlsx` | Drug name ↔ 3-letter code mapping table |
+| `data/meddra_annotate.csv` | MedDRA cardiac adverse event term annotations |
 | `data/GEGcsv/` | RNA-seq differential expression files (`*_mapped.csv`) for 54 drugs × 6 cell lines (266 files) |
-| `data/aersMineExploreDataSet_176_all54.tsv.xlsx` | FAERS ROR data from AERSmine
-| `models/HeartModel.mat` | Origonal iCardio model (Dougherty et al. Cell Rep, 2021https://doi.org/10.1016/j.celrep.2021.108836) |
-| `models/objRxns.mat` | Helper data for visualizing flux
+| `data/aersMineExploreDataSet_176_all54.tsv.xlsx` | FAERS adverse event reports from [AERSmine](http://research.cchmc.org/aers/) |
+| `models/HeartModel.mat` | iCardio heart model ([Dougherty et al., Cell Rep, 2021](https://doi.org/10.1016/j.celrep.2021.108836)) |
+| `models/objRxns.mat` | Objective reaction list for flux visualization |
 
-> **Note:** RNA-seq data paths are configured at the top of each script. Update `pathRNA` to point to your local data directory.
+> **Note:** RNA-seq data paths are configured at the top of each flux script (steps 03, 09, 11). Update `pathRNA` to point to your local data directory.
 
 ## Pipeline
 
@@ -60,7 +61,7 @@ Run scripts sequentially in the order below. Each script is self-contained — a
 
 ```matlab
 % Step 1: Configure paths
-% Open each script and set pathRNA to your data directory
+% Open steps 03, 09, and 11 — set pathRNA to your RNA-seq data directory
 
 % Step 2: Run the pipeline sequentially
 step01_calculate_ROR
@@ -98,11 +99,13 @@ step12_dose_response_heatmaps
 ├── data/
 │   ├── drugMap.xlsx
 │   ├── meddra_annotate.csv
+│   ├── GEGcsv/
 │   └── aersMineExploreDataSet_176_all54.tsv.xlsx
 ├── models/
 │   ├── HeartModel.mat
 │   └── objRxns.mat
 ├── out/                    % Generated intermediate results
+├── outPf_GL/               % Generated dose-response grid results
 └── figures/                % Generated figures
 ```
 
