@@ -77,25 +77,6 @@ step12_dose_response_heatmaps
 
 > **Runtime note:** Steps 3, 4, 9, and 11 are computationally intensive and benefit significantly from the Parallel Computing Toolbox. On a 34-core workstation, the full pipeline takes approximately 24–48 hours. Steps 6, 7, 8, 10, and 12 complete in minutes.
 
-## Suggested File Renaming
-
-For clarity, we recommend renaming the original driver scripts as follows:
-
-| Original Name | Suggested Name |
-|---|---|
-| `driver1_calc_ROR-11.m` | `step01_calculate_ROR.m` |
-| `driver2_optimize_iCardio-5.m` | `step02_optimize_GEM.m` |
-| `driver3_deltaFlux_SJ0-6.m` | `step03_calculate_delta_flux.m` |
-| `driver4_train_ML_models-2.m` | `step04_train_ML_models.m` |
-| `driver5_calc_comprehensive_metrics-13.m` | `step05_evaluate_model_metrics.m` |
-| `driver6_make_publication_figs-3.m` | `step06_generate_publication_figures.m` |
-| `driver7_parseModels_final-7.m` | `step07_subsystem_importance.m` |
-| `driver8_parseSubSystems_MassBalanced-14.m` | `step08_subsystem_sweep_mass_balanced.m` |
-| `driver9_drugConvComp_ver2-12.m` | `step09_drug_combination_flux.m` |
-| `driver10_v3-4.m` | `step10_combination_ML_inference.m` |
-| `driver11_drugCombComp_NoahsFinalAttempt-8.m` | `step11_dose_response_grid_flux.m` |
-| `driver12_vP-9.m` | `step12_dose_response_heatmaps.m` |
-
 ## Project Structure
 
 ```
