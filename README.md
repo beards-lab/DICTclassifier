@@ -31,6 +31,9 @@ Place the following in the project directory before running:
 |---|---|
 | `data/drugMap.xlsx` | Drug name ↔ 3-letter code mapping table |
 | `data/GEGcsv/` | RNA-seq differential expression files (`*_mapped.csv`) for 54 drugs × 6 cell lines (266 files) |
+| 'data/aersMineExploreDataSet_176_all54.tsv.xlsx' | FAERS ROR data from AERSmine
+| `models/HeartModel.mat` | Origonal iCardio model (Dougherty et al. Cell Rep, 2021https://doi.org/10.1016/j.celrep.2021.108836) |
+| 'models/objRxns.mat' | Helper data for visualizing flux
 
 > **Note:** RNA-seq data paths are configured at the top of each script. Update `pathRNA` to point to your local data directory.
 
@@ -94,8 +97,11 @@ step12_dose_response_heatmaps
 ├── step12_dose_response_heatmaps.m
 ├── data/
 │   ├── drugMap.xlsx
-│   ├── FAERS/
-│   └── GEGcsv/
+│   ├── meddra_annotate.csv
+│   └── aersMineExploreDataSet_176_all54.tsv.xlsx
+├── models/
+│   ├── HeartModel.mat
+│   └── objRxns.mat
 ├── out/                    % Generated intermediate results
 └── figures/                % Generated figures
 ```
