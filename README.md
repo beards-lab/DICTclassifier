@@ -1,6 +1,6 @@
 # Predicting Metabolism-Mediated Drug-Induced Cardiotoxicity Using Genome-Scale Metabolic Flux Analysis
 
-This repository contains the MATLAB code for reproducing all computational results and figures in:
+This repository contains the MATLAB code for reproducing all computational results and figures in the unpublished work:
 
 > Schenk, N.A., Sturgess, A., Mahoney, C., & Beard, D.A. "Predicting Metabolism-Mediated Mechanisms of Drug-Induced Cardiotoxicity Using Genome-Scale Metabolic Flux Analysis." *University of Michigan, Department of Molecular & Integrative Physiology.*
 
