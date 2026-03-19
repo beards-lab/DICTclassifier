@@ -8,7 +8,7 @@ This repository contains the MATLAB code for reproducing all computational resul
 
 We developed a computational pipeline that integrates genome-scale metabolic modeling with machine learning to predict drug-induced cardiotoxicity (DICT). The approach:
 
-1. Optimizes a thermodynamically constrained cardiomyocyte metabolic model (iCardio)
+1. Optimizes an existing cardiomyocyte metabolic model (iCardio)
 2. Integrates RNA-seq data from drug-treated iPSC-derived cardiomyocytes (6 cell lines, 54 drugs) to compute metabolic flux perturbations
 3. Trains ensemble machine learning classifiers on reaction-level flux features, validated against FDA Adverse Event Reporting System (FAERS) cardiotoxicity labels
 4. Identifies metabolic subsystems driving toxicity predictions and evaluates drug combination (anthracycline + olmesartan) effects on cardiotoxicity risk
