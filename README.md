@@ -21,7 +21,7 @@ We developed a computational pipeline that integrates genome-scale metabolic mod
   - [Statistics and Machine Learning Toolbox](https://www.mathworks.com/products/statistics.html) — `fitcensemble`, `rocmetrics`, `tsne`, `cvpartition`, `bayesopt`, `predict`, `swarmchart`, `boxplot`
   - [Bioinformatics Toolbox](https://www.mathworks.com/products/bioinfo.html) — `mattest`, `mafdr`
   - [Parallel Computing Toolbox](https://www.mathworks.com/products/parallel-computing.html) — `parfor`, `parpool` (optional, for accelerated computation)
-- **GPU** (optional) — Driver 10 uses `gpuArray` for permutation testing; falls back to CPU if unavailable
+- **GPU** (optional) — step10 uses `gpuArray` for permutation testing; falls back to CPU if unavailable
 
 ## Input Data
 
@@ -31,7 +31,6 @@ Place the following in the project directory before running:
 |---|---|
 | `data/drugMap.xlsx` | Drug name ↔ 3-letter code mapping table |
 | `data/GEGcsv/` | RNA-seq differential expression files (`*_mapped.csv`) for 54 drugs × 6 cell lines (266 files) |
-| `data/FAERS/` | FDA Adverse Event Reporting System data for ROR calculation |
 
 > **Note:** RNA-seq data paths are configured at the top of each script. Update `pathRNA` to point to your local data directory.
 
