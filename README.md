@@ -84,18 +84,19 @@ step12_dose_response_heatmaps
 
 ```
 ├── README.md
-├── step01_calculate_ROR.m
-├── step02_optimize_GEM.m
-├── step03_calculate_delta_flux.m
-├── step04_train_ML_models.m
-├── step05_evaluate_model_metrics.m
-├── step06_generate_publication_figures.m
-├── step07_subsystem_importance.m
-├── step08_subsystem_sweep_mass_balanced.m
-├── step09_drug_combination_flux.m
-├── step10_combination_ML_inference.m
-├── step11_dose_response_grid_flux.m
-├── step12_dose_response_heatmaps.m
+├── scripts/
+│   ├── step01_calculate_ROR.m
+│   ├── step02_optimize_GEM.m
+│   ├── step03_calculate_delta_flux.m
+│   ├── step04_train_ML_models.m
+│   ├── step05_evaluate_model_metrics.m
+│   ├── step06_generate_publication_figures.m
+│   ├── step07_subsystem_importance.m
+│   ├── step08_subsystem_sweep_mass_balanced.m
+│   ├── step09_drug_combination_flux.m
+│   ├── step10_combination_ML_inference.m
+│   ├── step11_dose_response_grid_flux.m
+│   └── step12_dose_response_heatmaps.m
 ├── data/
 │   ├── drugMap.xlsx
 │   ├── meddra_annotate.csv
